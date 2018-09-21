@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -16,7 +17,8 @@ module.exports = {
   module: {
     rules: [
       { test: /\.tsx?$/, use: "awesome-typescript-loader" },
-      { test: /\.css?$/, use: ["style-loader", "css-loader"] },
+      { test: /\.css?$/, use: ["style-loader", "css-loader"]},
+      { test: /\.(png|jpg|gif)$/, use: "file-loader" },
       { enforce: "pre", test: /\.js$/, use: "source-map-loader" }
   ]},
   externals: {

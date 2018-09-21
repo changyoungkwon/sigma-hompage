@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Layout, Icon } from 'antd';
 import PageFooter from './Footer';
+import PageHeader from './Header';
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -9,13 +10,10 @@ class MainLayout extends React.Component<any, any> {
     return (
       <Layout>
         <Header>
-
+          <PageHeader />
         </Header>
         <Content>
         </Content>
-        <Sider collapsed={false}>
-
-        </Sider>
         <Footer>
           <PageFooter />
         </Footer>
