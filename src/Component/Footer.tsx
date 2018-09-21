@@ -22,7 +22,7 @@ export default function Footer(props:any) : React.ReactElement<any> {
       {/* Footer comment */}
       <span>
         &copy; Copyrighted by WaffleStudio 2017&emsp;|&emsp;All Rights Reserved&emsp;|&emsp;Powered by&ensp;
-          <AtWaffle content="Waffle Studio" />
+        <AtWaffle content={<strong>Waffle Studio</strong>} />
       </span>
       <AtWaffle content={<Icon type="facebook" style={{float:'right', fontSize: '2em'}}/> }/>
     </div>
